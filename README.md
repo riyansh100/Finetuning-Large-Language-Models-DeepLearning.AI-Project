@@ -1,4 +1,4 @@
-# Finetuning Large Language Models — DeepLearning.AI Project
+# Finetuning Large Language Models - DeepLearning.AI Project
 
 > GitHub README for the project derived from the DeepLearning.AI course notebooks: `Training.ipynb` and `Evaluation.ipynb`.
 
@@ -155,32 +155,12 @@ gen_config = {
 
 ---
 
-## Reproducibility
-
-- Record the exact package versions (export `pip freeze > requirements.freeze.txt`).
-- Log random seeds and training arguments in the notebook. The notebooks include seed-setting cells; confirm or change them for reproducible runs.
-
----
-
-## Results & artifacts
-
-In your repo, include a short `results/` folder or a `README_RESULTS.md` that contains:
-- Best checkpoint path and the exact `git commit` or notebook version used.
-- Quantitative metrics (validation loss, ROUGE, BLEU, accuracy) and sample generations (good and bad examples).
-
----
-
 ## Troubleshooting
 
 - `OutOfMemoryError`: reduce batch size, enable gradient checkpointing, or use 8-bit training.
 - Slow training: enable mixed precision, use a smaller model for iteration, or use `accelerate` to distribute training.
 - Tokenization issues: ensure the tokenizer and model match (same pretrained name) and the dataset is cleaned of unexpected tokens/newlines.
 
----
-
-## License
-
-Include a license file (e.g., MIT) appropriate for your project. If you used course materials, ensure you respect any licensing or usage restrictions from DeepLearning.AI and the model providers.
 
 ---
 
@@ -188,12 +168,4 @@ Include a license file (e.g., MIT) appropriate for your project. If you used cou
 
 This project follows the DeepLearning.AI course on finetuning LLMs and uses the Hugging Face Transformers & Datasets ecosystem.
 
----
 
-## Contact
-
-If you have questions or want to reproduce the experiments, open an issue or contact the repository owner.
-
----
-
-*Generated README — please review the configuration cells in `Training.ipynb` and `Evaluation.ipynb` and replace placeholder values (dataset path, model name, hyperparameters, and results) with the exact values you used in your experiments.*
